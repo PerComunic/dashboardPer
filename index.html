@@ -76,10 +76,10 @@
                 <div class="kpi-card"><h3>Resultado</h3><p id="kpi-resultado">$0,00</p></div>
                 <div class="kpi-card"><h3>Margen</h3><p id="kpi-margen">0,00%</p></div>
             </div>
-            <div class="grid-container">
+            <div class="grid-container" style="grid-template-columns: 1fr 1fr;">
                 <div class="card full-width"><h3>Evolución Mensual (Ventas vs. Gastos)</h3><canvas id="evolucionMensualChart"></canvas></div>
-                <div class="card"><h3>Composición de Ventas</h3><div class="chart-wrapper"><canvas id="composicionVentasChart"></canvas></div></div>
-                <div class="card"><h3>Composición de Gastos</h3><div class="chart-wrapper"><canvas id="composicionGastosChart"></canvas></div></div>
+                <div class="card" style="grid-column: span 1; min-width: 0;"><h3>Composición de Ventas</h3><div class="chart-wrapper"><canvas id="composicionVentasChart"></canvas></div></div>
+                <div class="card" style="grid-column: span 1; min-width: 0;"><h3>Composición de Gastos</h3><div class="chart-wrapper"><canvas id="composicionGastosChart"></canvas></div></div>
             </div>
         </div>
         <div id="gastos" class="tab-content">
