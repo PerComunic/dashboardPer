@@ -178,7 +178,7 @@ function updateDashboard() {
     document.getElementById('kpi-margen').textContent = `${margen.toFixed(2).replace('.', ',')}%`;
     
     updateEvolucionMensualChart(selectedYear);
-    updateComposicionChart(filteredData.filter(d => d.Tipo === 'Ventas'), 'composicionVentasChart', 'Razón Social');
+    updateComposicionChart(filteredData.filter(d => d.Tipo === 'Ventas'), 'composicionVentasChart', 'Descripción');
     updateComposicionChart(filteredData.filter(d => d.Tipo === 'Gastos'), 'composicionGastosChart', 'Descripción');
     updateTopGastosChart(filteredData);
     updateIncidenciaGastosTable(filteredData, totalVentas);
